@@ -13,3 +13,7 @@ all of the other thresholds also need to fail for a video sequence to be
 considered potentially hazardous.
 
 Note that many of the flashes marked 'f' in this folder would pass the NAB-J strandards.
+
+## Patterns
+
+### Test with quick 
