@@ -15,5 +15,11 @@ considered potentially hazardous.
 Note that many of the flashes marked 'f' in this folder would pass the NAB-J strandards.
 
 ## Patterns
+Representations of temporal-color patterns.
 
-### Test with quick 
+### 30 fps tests
+
+| Scheme | Description | *f* - Failure | *l* - Lum. Pass | *c* - Flash Count Pass |
+| --- | --- | --- | --- | --- |
+| *x*00*n*_ srgba. csv | 6 or 7 quick transitions right away | ![Failure with 7 quick transitions](./documentation/f00n_srgba.svg) | ![Low luminance pass with 7 quick transitions](./documentation/l00n_srgba.svg "Image Title") | ![Count pass with 6 quick transitions](./documentation/c00n_srgba.svg "Image Title") |
+| *x*r00*n*_ srgba. csv | 6 or 7 quick transitions right away (reversed polarity) | ![Failure with 7 quick transitions (reversed polarity)](./documentation/fr00n_srgba.svg) | ![Low luminance pass with 7 quick transitions (reversed polarity)](./documentation/lr00n_srgba.svg "Image Title") | ![Count pass with 6 quick transitions (reversed polarity)](./documentation/cr00n_srgba.svg "Image Title") |
