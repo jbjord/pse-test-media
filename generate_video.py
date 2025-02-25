@@ -2,6 +2,7 @@ import cv2
 import json
 import os
 import csv
+import argparse
 
 def read_csv(file_path):
     csv_dir = os.path.dirname(file_path)
@@ -9,7 +10,7 @@ def read_csv(file_path):
         reader = csv.DictReader(file)
         return [os.path.join(csv_dir, row['image_path']) for row in reader]
 
-def generate_video(json_file):
+def generate_video(json_file, padding_frames=None):
     # Load the JSON data
     with open(json_file, 'r') as f:
         data = json.load(f)
@@ -33,6 +34,15 @@ def generate_video(json_file):
     codec = data.get('codec', 'ffv1')
     video_extension = data.get('video_extension', 'avi')
     
+    # Extract padding from JSON, if specified
+    json_padding = data.get('padding', 0)
+    
+    # Resolve padding: Use command line padding if provided, else use JSON padding
+    if padding_frames is None:
+        padding_frames = json_padding
+    elif padding_frames != json_padding:
+        print(f"Warning: Padding specified in JSON ({json_padding}) is overridden by command line option ({padding_frames}).")
+    
     # Initialize video writer
     fourcc = cv2.VideoWriter_fourcc(*codec)
     output_video = os.path.join(os.path.dirname(json_file), f"{basename}.{video_extension}")
@@ -49,6 +59,10 @@ def generate_video(json_file):
     height, width, _ = first_frame.shape
     video_writer = cv2.VideoWriter(output_video, fourcc, framerate, (width, height))
     
+    # Add padding frames by repeating the first frame
+    for _ in range(padding_frames):
+        video_writer.write(first_frame)
+    
     # Add each frame to the video writer
     for frame_path in frame_paths:
         frame = cv2.imread(frame_path)
@@ -63,8 +77,12 @@ def generate_video(json_file):
 
 # Command line execution
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) != 2:
-        print("Usage: python generate_video.py <path_to_json>")
-    else:
-        generate_video(sys.argv[1])
+    parser = argparse.ArgumentParser(description='Generate a video as specified in a JSON (that references CSV file listing of frames).')
+    parser.add_argument('json_file', help='Path to the JSON file.')
+    parser.add_argument('--padding', type=int, help='Number of padding frames to add at the start.')
+    
+    # Parse the arguments
+    args = parser.parse_args()
+    
+    # Call the function with parsed arguments
+    generate_video(args.json_file, args.padding)
