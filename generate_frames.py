@@ -2,8 +2,8 @@ import csv
 import numpy as np
 from PIL import Image
 import os
-import json
 import argparse
+from utils.json_utils import merge_with_config
 
 def recolor_image(png_path, r, g, b, a):
     with Image.open(png_path) as img:
@@ -100,6 +100,7 @@ def generate_frames(json_data, json_dir):
         for data in new_csv_data:
             writer.writerow(data)
 
+
 # Command line execution
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate frames from JSON input.')
@@ -108,8 +109,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     json_path = args.json_path
     json_dir = os.path.dirname(os.path.abspath(json_path))
-
-    with open(json_path, 'r') as json_file:
-        json_data = json.load(json_file)
+    json_data = merge_with_config(json_path) 
 
     generate_frames(json_data, json_dir)

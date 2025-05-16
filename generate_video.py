@@ -1,8 +1,8 @@
 import cv2
-import json
 import os
 import csv
 import argparse
+from utils.json_utils import merge_with_config
 
 def read_csv(file_path):
     csv_dir = os.path.dirname(file_path)
@@ -12,8 +12,8 @@ def read_csv(file_path):
 
 def generate_video(json_file, padding_frames=None):
     # Load the JSON data
-    with open(json_file, 'r') as f:
-        data = json.load(f)
+    data = merge_with_config(json_file)
+
 
     # Get JSON file's basename
     basename = os.path.basename(json_file).split('.')[0]
