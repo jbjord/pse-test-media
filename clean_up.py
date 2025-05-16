@@ -1,12 +1,11 @@
 import os
 import shutil
-import json
 import argparse
+from utils.json_utils import merge_with_config
 
 def cleanup_directory(json_file_path, silent=False):
     # Load JSON
-    with open(json_file_path, 'r') as file:
-        data = json.load(file)
+    data = merge_with_config(json_file_path)
     
     # Get directory to delete
     json_dir = os.path.dirname(json_file_path)
