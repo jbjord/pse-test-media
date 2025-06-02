@@ -1,5 +1,4 @@
 {
-    "framerate": 30,
     "codec": "I420",
     "video_extension": "avi",
     "padding": 0,
