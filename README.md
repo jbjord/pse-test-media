@@ -36,6 +36,7 @@ The format and codec of the output video files can be changed in the video confi
 
 ### Create single video
 To create a single video run `./make_single_video.py` with a video generation JSON file as an argument.
+The video output will be in a `videos/` subdirectory of where the JSON file is.
 
 For example:
 ```
@@ -87,7 +88,7 @@ They can be defined in individual video generation JSON files, but that would le
 The following are required components of the JSON:
 
  - `"codec"` - \[String] The FOURCC identifier for the file output's video codec, compression format, color or pixel format ([more information](https://fourcc.org/)). This must be supported by OpenCV.
- - `"video_extension:"` = \[String] The extension to be used for the video file.
+ - `"video_extension:"` - \[String] The extension to be used for the video file.
  
 Optional parameters include:
  - `"padding"` - \[Integer] The number of frames of padding at the beginning of the video (repeats the first frame)

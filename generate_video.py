@@ -43,9 +43,13 @@ def generate_video(json_file, padding_frames=None):
     elif padding_frames != json_padding:
         print(f"Warning: Padding specified in JSON ({json_padding}) is overridden by command line option ({padding_frames}).")
     
+    # Make 'videos/' subdirectory
+    save_dir = os.path.join(os.path.dirname(json_file), "videos") 
+    os.makedirs(save_dir, exist_ok=True)
+
     # Initialize video writer
     fourcc = cv2.VideoWriter_fourcc(*codec)
-    output_video = os.path.join(os.path.dirname(json_file), f"{basename}.{video_extension}")
+    output_video = os.path.join(save_dir, f"{basename}.{video_extension}")
     
     # Print the first frame path for debugging
     first_frame_path = frame_paths[0]
