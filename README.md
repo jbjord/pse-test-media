@@ -5,6 +5,7 @@ pse-test-media
  - [Introduction](#introduction)
  - [Usage](#usage)
    - [Create single video](#create-single-video)
+   - [Create a set of videos](#create-a-set-of-videos)
  - [Documentation](#documentation)
    - [Spatial patterns (PNG)](#spatial-patterns-png)
    - [Time-and-color patterns (CSV)](#time-and-color-patterns-csv)
@@ -40,11 +41,23 @@ The video output will be in a `videos/` subdirectory of where the JSON file is.
 
 For example:
 ```
-python ./make_single_video.py ./video_creation/30fps_trace24/f001f034.json
+python ./make_single_video.py ./video_creation/trace24_30fps_01/f001f034.json
 ```
 
 This creates unique PNG frames with `./generate_frames.py`, sequences the frames to create a video file with `./generate_video.py`, and cleans up the temporary files with `./clean_up.py`.
 
+### Create a set of videos
+A set of videos are listed in a CSV file, which also contains information about whether videos are expected to pass or not.
+Such CSV files list the filenames (without extensions) of the JSON files (as well as the filenames of the resultant videos).
+
+The `./make_videos.py` script has two options:
+ - `--silent` - reduces output to the terminal
+ - `--max_threads` - the maximum number of parallel threads for video creation.
+
+An example of creating a set of videos:
+```
+python ./make_videos.py .video_creation/trace24_30fps_01/trace24_30fps_01.csv --silent --max_threads 4
+```
 
 ## Documentation
 In this project, there are two types of patterns (spatial and time-and-color patterns) that are combined to create video sequences.
