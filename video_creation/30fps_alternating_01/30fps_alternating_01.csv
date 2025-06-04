@@ -1,0 +1,17 @@
+filename,pass,dimension
+f001c037,TRUE,count
+f001f037,FALSE,FAIL
+f002c033,TRUE,count
+f002c037,TRUE,count
+f003c038,TRUE,count
+f003f033,FALSE,FAIL
+f004c032,TRUE,count
+f004c034,TRUE,count
+f005c031,TRUE,count
+f005f034,FALSE,FAIL
+f006c035,TRUE,count
+f006f031,FALSE,FAIL
+f007c032,TRUE,count
+f007c038,TRUE,count
+f008c035,TRUE,count
+f008c036,TRUE,count
