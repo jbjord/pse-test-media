@@ -1,0 +1,18 @@
+{
+    "framerate": 30,
+    "colormodel": "sRGBA",
+    "bgcolor": "(124,124,124,255)",
+    "pattern": [
+        {
+            "spatial": "../../area_patterns/25pct_screen/f006_fhd.png",
+            "temporal_color": "../../lum_flash_patterns/rel_lum/fr002_srgba.csv"
+        }
+    ],
+    "expected_result": {
+        "trace24": "fail",
+        "wcag2_2": "fail",
+        "ofcom2017": "fail",
+        "itu_r1702_4": "fail",
+        "iso": "fail"
+    }
+}
