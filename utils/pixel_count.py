@@ -41,7 +41,7 @@ def process_folder(folder_path):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python script.py <path_to_png_or_folder>")
+        print("Usage: python pixel_count.py <path_to_png_or_folder>")
         sys.exit(1)
     
     path = sys.argv[1]
