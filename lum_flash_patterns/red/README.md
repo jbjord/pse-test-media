@@ -24,5 +24,5 @@ Descriptions of temporal-color patterns.
 | Scheme | General Description | *f* - Failure | *c* - Lum. Pass | *s* - Flash Count Pass | *d* - Single Lum. Pass |
 | --- | --- | --- | --- | --- | --- |
 | *x*00*n*_multi.csv | 6 or 7 quick transitions right away between varying red and not-red states (multicolor) | Failure with 7 quick transitions | Pass with only 6 quick transitions | TODO | TODO | 
-| *x*01*n*_multi.csv | Evenly spaced quick flashes between varying red and not-red states (multicolor) | Failure with 4 quick, evenly-spaced flashes | TODO | TODO | TODO | 
+| *x*01*n*_multi.csv | Evenly spaced (nearly so) quick flashes between varying red and not-red states (multicolor) | Failure with 4 quick, evenly-spaced flashes | Pass with quick, evenly-spaced flashes, where the fourth flash is outside the one-second period with the first | TODO | TODO | 
 | *x*02*n*_multi.csv | Square wave (nearly so) between varying red and not-red states (multicolor) | Failure with a rough square wave | TODO | TODO | TODO | 
