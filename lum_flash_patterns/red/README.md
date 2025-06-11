@@ -1,0 +1,27 @@
+# Red flash patterns for 0.2 chromaticity difference and >3 flashes/s thresholds
+All source CSV files in this folder are patterns for testing the red flash thresholds:
+> - saturated red state where `R / (R + G + B) >= 0.8`
+> - chromaticity difference threshold of 0.2 in u'v' chromaticity space (on the 1976 UCS chromaticity diagram) 
+> - flash count threshold of >3 flashes per second (i.e., 7 or more alternating transitions)
+
+Filenames that start with 
+ - 'f' are failing - each red flash returns to a saturated red state along with failing chromaticity difference threshold (0.2) and failing count threshold (>3 flash/s)  
+ - 'c' are passing - each red flash returns to a saturated red state along with failing chromaticity difference threshold (0.2) and *passing <u>c</u>ount threshold* (>3 flash/s)
+ - 's' are passing - where *not all red flashes return to a <u>s</u>aturated red state* along with failing chromaticity difference threshold (0.2) and failing count threshold (>3 flash/s)
+ - 'd' are passing - each red flash returns to a saturated red state along with a *passing chromaticity <u>d</u>ifference threshold* (<0.2 for at least one flash) and failing count threshold (>3 flash/s)  
+
+For any failing pattern incorporated into a video, 
+all of the other thresholds also need to fail for a video sequence to be 
+considered potentially hazardous.
+
+Note that many of the flashes marked 'f' in this folder would pass the NAB-J standards.
+
+## Patterns 
+Descriptions of temporal-color patterns.
+
+### 30 fps tests
+
+| Scheme | Description | *f* - Failure | *c* - Lum. Pass | *s* - Flash Count Pass | *d* - Single Lum. Pass |
+| --- | --- | --- | --- | --- | --- |
+| *x*00*n*_multi.csv | 6 or 7 quick transitions right away between varying red and not-red states (multicolor) | Failure with 7 quick transitions | TODO | TODO | TODO | 
+

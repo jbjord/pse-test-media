@@ -1,5 +1,5 @@
 # Luminance flash patterns for 0.1 relative luminance and >3 flashes/s thresholds
-All source images in this folder are patterns for testing the luminance flash thresholds:
+All source CSV files in this folder are patterns for testing the luminance flash thresholds:
 > - luminance threshold of 0.1 relative luminance (RL)
 > - flash count threshold of >3 flashes per second (i.e., 7 or more alternating transitions)
 
@@ -13,7 +13,7 @@ For any failing pattern incorporated into a video,
 all of the other thresholds also need to fail for a video sequence to be 
 considered potentially hazardous.
 
-Note that many of the flashes marked 'f' in this folder would pass the NAB-J strandards.
+Note that many of the flashes marked 'f' in this folder would pass the NAB-J standards.
 
 ## Patterns
 Representations of temporal-color patterns.

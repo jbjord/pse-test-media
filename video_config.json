@@ -1,7 +1,7 @@
 {
     "codec": "I420",
     "video_extension": "avi",
-    "padding": 0,
+    "padding": 10,
 
     "comment1": "codec I420 works with Old PEAT tool."
 }
