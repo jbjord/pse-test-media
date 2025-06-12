@@ -1,4 +1,4 @@
-# Red flash patterns for 0.2 chromaticity difference and >3 flashes/s thresholds
+# Red flash patterns at 30fps for 0.2 chromaticity difference and >3 flashes/s thresholds
 All source CSV files in this folder are patterns for testing the red flash thresholds:
 > - saturated red state where `R / (R + G + B) >= 0.8`
 > - chromaticity difference threshold of 0.2 in u'v' chromaticity space (on the 1976 UCS chromaticity diagram) 
