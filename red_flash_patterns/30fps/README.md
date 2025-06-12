@@ -19,10 +19,24 @@ Note that many of the flashes marked 'f' in this folder would pass the NAB-J sta
 ## Patterns 
 Descriptions of temporal-color patterns.
 
-### 30 fps tests
+### Simple, dual-color tests
+These tests alternate between a single red color and non-red color. Luminance is similar between states. 
 
-| Scheme | General Description | *f* - Failure | *c* - Lum. Pass | *s* - Flash Count Pass | *d* - Single Lum. Pass |
+| Naming Scheme | General Description | *f* - Failure | *c* - Lum. Pass | *s* - Flash Count Pass | *d* - Single Lum. Pass |
+| --- | --- | --- | --- | --- | --- |
+| *x*00*n*_simple.csv | 6 or 7 quick transitions right away between varying red and not-red states (multicolor) | Failure with 7 quick transitions | Pass with only 6 quick transitions | Pass where one flash does not return to a saturated red state | Pass where one transition does not exceed the 0.2 chromaticity difference threshold | 
+| *x*01*n*_simple.csv | Evenly spaced (nearly so) quick flashes between varying red and not-red states (multicolor) | Failure with 4 quick, evenly-spaced flashes | Pass with quick, evenly-spaced flashes, where the fourth flash is outside the one-second period with the first | Pass with quick, evenly-spaced flashes, where one red state is not a "saturated red" | Pass with quick, evenly-spaced flashes, where one transition does not exceed the 0.2 chromaticity difference threshold | 
+| *x*02*n*_simple.csv | Square wave (nearly so) between varying red and not-red states (multicolor) | Failure with a rough square wave | Pass with a rough square wave, where the start of the fourth flash is outside the one-second period with the first | Pass with a rough square wave where one red state is not a saturated red | Pass with a rough square wave, where one transition does not exceed the 0.2 chromaticity difference threshold | 
+
+Where *n* ranges from 1-9 inclusive for different color combinations at three difference luminances: approximately 0.04, 0.13, and 0.19 relative luminance.
+
+### Multi-color tests
+These tests do not use the same color for the red states and non-red states. Luminance is similar between states. 
+
+| Naming Scheme | General Description | *f* - Failure | *c* - Lum. Pass | *s* - Flash Count Pass | *d* - Single Lum. Pass |
 | --- | --- | --- | --- | --- | --- |
 | *x*00*n*_multi.csv | 6 or 7 quick transitions right away between varying red and not-red states (multicolor) | Failure with 7 quick transitions | Pass with only 6 quick transitions | Pass where one flash does not return to a saturated red state | Pass where one transition does not exceed the 0.2 chromaticity difference threshold | 
 | *x*01*n*_multi.csv | Evenly spaced (nearly so) quick flashes between varying red and not-red states (multicolor) | Failure with 4 quick, evenly-spaced flashes | Pass with quick, evenly-spaced flashes, where the fourth flash is outside the one-second period with the first | Pass with quick, evenly-spaced flashes, where one red state is not a "saturated red" | Pass with quick, evenly-spaced flashes, where one transition does not exceed the 0.2 chromaticity difference threshold | 
 | *x*02*n*_multi.csv | Square wave (nearly so) between varying red and not-red states (multicolor) | Failure with a rough square wave | Pass with a rough square wave, where the start of the fourth flash is outside the one-second period with the first | Pass with a rough square wave where one red state is not a saturated red | Pass with a rough square wave, where one transition does not exceed the 0.2 chromaticity difference threshold | 
+
+Where *n* ranges from 1-5 inclusive for different color combinations.
