@@ -1,0 +1,18 @@
+{
+    "framerate": 30,
+    "colormodel": "sRGBA",
+    "bgcolor": "(80,80,80,255)",
+    "pattern": [
+        {
+            "spatial": "../../area_patterns/25pct_416x416/a009_on_416x416_fhd.png",
+            "temporal_color": "../../red_flash_patterns/30fps/f002_multi.csv"
+        }
+    ],
+    "expected_result": {
+        "trace24": "pass",
+        "wcag2_2": "pass",
+        "ofcom2017": "pass",
+        "itu_r1702_4": "pass",
+        "iso": "pass"
+    }
+}
