@@ -2,6 +2,7 @@
 
  - **File:** broadcast_30fps_01.csv
  - **Standards:** iso, itu_r1702, ofcom 
+ - **Flash type:** Luminance 
  - **Frame rate:** 30 fps
  - **Dynamic range:** SDR
  - **Color space:** sRGB
