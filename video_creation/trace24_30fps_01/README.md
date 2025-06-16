@@ -2,6 +2,7 @@
 
  - **File:** trace24_30fps_01.csv
  - **Standard:** trace24
+ - **Flash type:** Luminance 
  - **Frame rate:** 30 fps
  - **Dynamic range:** SDR
  - **Color space:** sRGB

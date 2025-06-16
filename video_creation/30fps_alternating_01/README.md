@@ -2,6 +2,7 @@
 
  - **File:** 30fps_alternating_01.csv
  - **Standards:** iso, itu-r1702, ofcom, trace24, wcag2
+ - **Flash type:** Luminance 
  - **Frame rate:** 30 fps
  - **Dynamic range:** SDR
  - **Color space:** sRGB

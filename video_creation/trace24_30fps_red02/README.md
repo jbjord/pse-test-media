@@ -1,7 +1,8 @@
 # Red flash set 02 - multi-color
 
  - **File:** trace24_30fps_red02.csv
- - **Standard:** trace24
+ - **Standard:** trace24 
+ - **Flash type:** Red  
  - **Frame rate:** 30 fps
  - **Dynamic range:** SDR
  - **Color space:** sRGB
