@@ -1,5 +1,11 @@
+
 # Photosensitive Epilepsy (PSE) Test Media 
 pse-test-media
+
+> [!WARNING]
+> All generated test videos contain flashing sequences and may be hazardous to people with photosensitive epilepsy.
+> Failing videos exceed all thresholds of the respective standards (but are constructed to be less hazardous than full screen, full intensity flashing).
+> It is safer to view such videos in a small player window in a well-lit environment with one eye covered.
 
 ## Contents
  - [Introduction](#introduction)
@@ -23,13 +29,10 @@ This project aims to provide
  - A set of patterns in time and color for benchmark videos (in CSV) that cover intensity (both luminance flashes and red flashes) and flash-count-related benchmark cases
  - A set of combined spatial and time/color patterns (in JSON) to be used for benchmark video generation
 
-> [!WARNING]
-> ⚠️ All generated test videos contain flashing sequences and may be hazardous to people with photosensitive epilepsy.
-> Failing videos exceed all thresholds of the respective standards (but are constructed to be less hazardous than full screen, full intensity flashing).
-> It is safer to view such videos in a small player window in a well-lit environment with one eye covered.
+### Academic citation
+This project was first described in the paper: 
 
-This project was first described in the paper (not final citation): 
-Jordan, J. B. (accepted 2025). Evaluating Conformance of Video Safety Tools for Photosensitive Epilepsy.  In M. Antona & C. Stephanidis (eds.), *Universal Access in HCI, HCI International 2025,* 15 pages.
+Jordan, J. B. (2025). Evaluating Conformance of Video Safety Tools for Photosensitive Epilepsy. In M. Antona & C. Stephanidis (Eds.), *Universal Access in Human-Computer Interaction, HCII 2025*, Lecture Notes in Computer Science, vol. 15780 (pp. 85–98). Springer, Cham. [https://doi.org/10.1007/978-3-031-93848-1_7]("https://doi.org/10.1007/978-3-031-93848-1_7)
 
 
 ## Usage
@@ -93,7 +96,7 @@ The following are required components of the JSON:
    - `"temporal_color"` - \[String] path to the time-and-color pattern (CSV).
 
 
-By default video generation files override values in the video configuration file, but this can be changed with the option `--precedence=config`.
+By default, video generation files override values in the video configuration file, but this can be changed with the option `--precedence=config`.
 
 ### Video configuration file (JSON)
 The video configuration file `./video_config.json` defines the parameters that should be used across many videos. 
