@@ -10,7 +10,7 @@ def process_csv(path, silent, max_threads):
         # Determine if the path is a directory or a file
         if os.path.isdir(path):
             # If it's a directory, construct the CSV file path using the directory name
-            directory_name = os.path.basename(path)
+            directory_name = os.path.basename(os.path.dirname(path))
             file_path = os.path.join(path, f"{directory_name}.csv")
         else:
             # If it's a file, use the provided path directly
