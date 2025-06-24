@@ -7,6 +7,7 @@
 | broadcast_30fps_red01 | Test of simple red flashes with no other interference for broadcast | Red |30 | sRGB | SDR | ✔️ | ✔️ | ✔️ | x | x | x |
 | broadcast_30fps_red02 | Test of multi-color red flashes with no other interference for broadcast | Red | 30 | sRGB | SDR | ✔️ | ✔️ | ✔️ | x | x | x |
 | trace24_30fps_01 | Test of simple luminance flashes with no other interference for trace24 recommendations | Luminance | 30 | sRGB | SDR | x | x | x | ✔️ | x | x |
+| trace24_30fps_inf01 | Test of luminance flashes with 2 areas flashing partially in sync (interference) for trace24 recommendations | Luminance | 30 | sRGB | SDR | x | x | x | ✔️ | x | x |
 | trace24_30fps_red01 | Test of simple red flashes with no other interference for trace24 recommendations | Red |30 | sRGB | SDR | x | x | x | ✔️ | x | x |
 | trace24_30fps_red02 | Test of multi-color red flashes with no other interference for trace24 recommendations | Red | 30 | sRGB | SDR | x | x | x | ✔️ | x | x |
 
