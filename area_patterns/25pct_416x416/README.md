@@ -32,91 +32,29 @@ The following table has:
  - Checkmarks (✔️) where two patterns have no overlap (including a 416x416 buffer) 
  - Dashes (-) where two patterns overlap
 
-Empty cells should be read from the other direction.
-
 <table>
   <caption>Table filled on the diagonal whether two patterns (row versus column) overlap (checkmark) or not (dash)</caption>
   <tr>
-    <th>File prefix</th>
-    <th>f001</th>
-    <th>f002</th>
-    <th>f003</th>
-    <th>f004</th>
-    <th>f005</th>
-    <th>f006</th>
-    <th>f007</th>
-    <th>f008</th>
-    <th>f009</th>
-    <th>f010</th>
-    <th>f011</th>
-    <th>f012</th>
+    <td></td>
+    <th scope="col">f001</th>
+    <th scope="col">f002</th>
+    <th scope="col">f003</th>
+    <th scope="col">f004</th>
+    <th scope="col">f005</th>
+    <th scope="col">f006</th>
+    <th scope="col">f007</th>
+    <th scope="col">f008</th>
+    <th scope="col">f009</th>
+    <th scope="col">f010</th>
+    <th scope="col">f011</th>
+    <th scope="col">f012</th>
   </tr>
   <tr>
-    <th>f001</th>
+    <th scope="row">f001</th>
     <td>-</td>
     <td>✔️</td>
     <td>-</td>
     <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <th>f002</th>
-    <td></td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>-</td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>-</td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <th>f003</th>
-    <td></td>
-    <td></td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>-</td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <th>f004</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>-</td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>-</td>
-    <td>-</td>
-    <td>✔️</td>
-    <td>-</td>
-    <td>✔️</td>
-  </tr>
-  <tr>
-    <th>f005</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>-</td>
     <td>-</td>
     <td>✔️</td>
@@ -127,12 +65,72 @@ Empty cells should be read from the other direction.
     <td>-</td>
   </tr>
   <tr>
-    <th>f006</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <th scope="row">f002</th>
+    <td>✔️</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th scope="row">f003</th>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th scope="row">f004</th>
+    <td>-</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>✔️</td>
+  </tr>
+  <tr>
+    <th scope="row">f005</th>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th scope="row">f006</th>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
@@ -142,13 +140,13 @@ Empty cells should be read from the other direction.
     <td>-</td>
   </tr>
   <tr>
-    <th>f007</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <th scope="row">f007</th>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>-</td>
     <td>-</td>
     <td>✔️</td>
     <td>✔️</td>
@@ -157,14 +155,14 @@ Empty cells should be read from the other direction.
     <td>-</td>
   </tr>
   <tr>
-    <th>f008</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <th scope="row">f008</th>
+    <td>-</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
@@ -172,63 +170,63 @@ Empty cells should be read from the other direction.
     <td>✔️</td>
   </tr>
   <tr>
-    <th>f009</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <th scope="row">f009</th>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th scope="row">f010</th>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
-    <th>f010</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <th scope="row">f011</th>
+    <td>-</td>
+    <td>✔️</td>
+    <td>✔️</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-  </tr>
-  <tr>
-    <th>f011</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
     <td>-</td>
     <td>✔️</td>
   </tr>
   <tr>
-    <th>f012</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <th scope="row">f012</th>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✔️</td>
     <td>-</td>
   </tr>
 </table>
