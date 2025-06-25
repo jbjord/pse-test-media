@@ -50,8 +50,11 @@ python ./make_single_video.py ./video_creation/trace24_30fps_01/f001f034.json
 This creates unique PNG frames with `./generate_frames.py`, sequences the frames to create a video file with `./generate_video.py`, and cleans up the temporary files with `./clean_up.py`.
 
 ### Create a set of videos
+[Precompiled sets of videos](./video_creation/README.md) are available in `./video_creation/`.
+
 A set of videos are listed in a CSV file, which also contains information about whether videos are expected to pass or not.
 Such CSV files list the filenames (without extensions) of the JSON files (as well as the filenames of the resultant videos).
+The video output will be created in a `videos/` subdirectory where the video listing CSV file is.
 
 The `./make_videos.py` script has two options:
  - `--silent` - reduces output to the terminal
@@ -60,6 +63,12 @@ The `./make_videos.py` script has two options:
 An example of creating a set of videos:
 ```
 python ./make_videos.py .video_creation/trace24_30fps_01/trace24_30fps_01.csv --silent --max_threads 4
+```
+
+Note: If the video listing CSV file has the same name as the containing folder, then one can simply call the containing folder, for example:
+
+```
+python ./make_videos.py .video_creation/broadcast_30fps_red01/ --silent --max_threads 4
 ```
 
 ## Documentation
