@@ -34,6 +34,16 @@ This project was first described in the paper:
 
 Jordan, J. B. (2025). Evaluating Conformance of Video Safety Tools for Photosensitive Epilepsy. In M. Antona & C. Stephanidis (Eds.), *Universal Access in Human-Computer Interaction, HCII 2025*, Lecture Notes in Computer Science, vol. 15780 (pp. 85–98). Springer, Cham. [https://doi.org/10.1007/978-3-031-93848-1_7]("https://doi.org/10.1007/978-3-031-93848-1_7)
 
+## Dependencies
+The main frame and video generation scripts have 3 dependencies:
+
+ - OpenCV
+ - Numpy
+ - Pillow
+
+To install these, you can use:
+
+`pip install opencv-python numpy Pillow`
 
 ## Usage
 The format and codec of the output video files can be changed in the video configuration file `./video_config.json` ([see details below](#video-configuration-file-json)).
