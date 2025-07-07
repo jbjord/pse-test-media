@@ -8,8 +8,8 @@ All source CSV files in this folder are patterns at 30 fps for testing the lumin
 
 **Convention:** Filenames that end with 
  - 'fb' - fail both the luminance and thresholds and each sequence fails the count threshold (>3 flash/s)
- - 'fl' - fail the luminance threshold (0.1 RL) and fail count threshold (>3 flash/s), but pass the red thresholds with delta u'v' just less than 0.2
- - 'fr' - fail the red thresholds and the fail count threshold (>3 flash/s), but pass the luminance thresholds with delta Y just less than 0.1
+ - 'fl' - fail the luminance threshold (0.1 RL) and fail count threshold (>3 flash/s), but pass the red thresholds with delta u'v' just less than 0.2 for at least one flash
+ - 'fr' - fail the red thresholds and the fail count threshold (>3 flash/s), but pass the luminance thresholds with delta Y just less than 0.1 for at least one flash
  - 'p' - pass
 
 
