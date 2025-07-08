@@ -1,0 +1,15 @@
+filename,pass_luminance,pass_red,dimension
+a001_001fr,FALSE,FALSE,area
+a003_002fl,FALSE,FALSE,area
+a007_001fb,FALSE,FALSE,area
+a008_002fr,FALSE,FALSE,area
+f001_001p,FALSE,FALSE,lum_red
+f002_002p,FALSE,FALSE,lum_red
+f003_001fb,TRUE,TRUE,fail_both
+f004_001fr,FALSE,TRUE,fail_red
+f004_002p,FALSE,FALSE,lum_red
+f005_002fb,TRUE,TRUE,fail_both
+f006_001fl,TRUE,FALSE,fail_luminance
+f006_002fr,FALSE,TRUE,fail_red
+f007_001p,FALSE,FALSE,lum_red
+f008_002fl,TRUE,FALSE,fail_luminance
