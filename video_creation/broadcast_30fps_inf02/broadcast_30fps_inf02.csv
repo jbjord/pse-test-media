@@ -1,0 +1,11 @@
+filename,pass,dimension
+a002tf03_f006ics03,TRUE,area
+a003tf01_f008ico01,TRUE,area
+f001tf03_f003ico03,FALSE,FAIL
+f002tc03_f004ics03,TRUE,count
+f003tf01_f005ico01,FALSE,FAIL
+f004tc01_f002ics01,TRUE,count
+f005ty01_f007ico01,TRUE,luminance
+f006tc03_f001ico03,TRUE,count
+f007ty03_f006ics03,TRUE,luminance
+f008tc01_f001ics01,TRUE,count
