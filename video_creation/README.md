@@ -14,6 +14,9 @@
 | trace24_30fps_inf01 | Test of luminance flashes with 2 areas flashing partially in sync (interference) for trace24 recommendations | Luminance | 30 | sRGB | SDR | x | x | x | ✔️ | x | x |
 | trace24_30fps_red01 | Test of simple red flashes with no other interference for trace24 recommendations | Red |30 | sRGB | SDR | x | x | x | ✔️ | x | x |
 | trace24_30fps_red02 | Test of multi-color red flashes with no other interference for trace24 recommendations | Red | 30 | sRGB | SDR | x | x | x | ✔️ | x | x |
+| wcagc_30fps_area01 | Tests for WCAG "classic" area threshold | Luminance | 30 | sRGB | SDR | x | x | x | x | ✔️ | x |
+| wcagc_30fps_area02 | Tests for WCAG "classic" area threshold | Luminance | 30 | sRGB | SDR | x | x | x | x | ✔️ | x |
+| wcagc_30fps_area03 | Tests for WCAG "classic" area threshold with red flashes | Red | 30 | sRGB | SDR | x | x | x | x | ✔️ | x |
 
 
 Where the following shortcodes represent the following standards:
